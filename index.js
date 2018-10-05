@@ -1,24 +1,17 @@
-function handleSubmit(event) {
-    var form = event.target;
+var size = '';
+
+function pizzaOrder(place) {
+    var form = place.target;
     var elements = form.elements;
-    var guess = elements.guess.value;
-    var result = document.getElementById('result');
+    var sizes = elements.sizes;
+   
 
-    var numAnimals = 4;
-
-    if(guess == numAnimals){
-        result.textContent = 'you guessed right, smawt mutha trucker';
-        console.log("you guessed", guess, ', you guessed right, smawt mutha trucker');
+var selectedSize = '';
+    for (i=0; i < size.length; i++) {
+        var size=sizes[i];
+        if (size.checked) {
+            selectedSize += + ' ' + size.value;
         }
-    else if(guess < numAnimals) {
-        result.textContent = 'you guessed to low sucka, guess again';
-        console.log("you guessed", guess, ', you guessed to low sucka, guess again');
-        }
-    else {
-        result.textContent = 'you guessed to high silly, do better!';
-        console.log("you guessed", guess, ', you guessed to high silly, do better!');
-        }
+    }
 
 }
-
-

@@ -8,23 +8,47 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Bet you cant GUESS!! </h1>
+    <h1> ORDER DA ZA!! </h1>
 
-    <form onsubmit="return handleSubmit(event), false;">
+    <form onsubmit="place.preventDefault(); pizzaOrder(place);">
 
             <p1>
+                    What size pizza do you want? 
+                    <br>
                 <label>
-                    comments:
-                  how many animals do i have"
-                  <input name ="guess" type="number">
+                    <input name="zaSize" type="radio" > "small"
                 </label>
+                <br>
+                <label></label>
+                  <input name="zaSize" type="radio" > "medium"
+                </label>
+                <br>
+                <label>
+                  <input name="zaSize" type="radio" > "large"
+                </label>
+                
             </p1>
-
-        <button>Guess</button>
+            <br>
+            <p1>
+                    What toppings do you want? 
+                    <br>
+                <label>
+                  <input name="toppings" type="checkbox" > "roni"
+                </label>
+                <br>
+                <label></label>
+                  <input name="toppings" type="checkbox" > "peppers"
+                </label>
+                <br>
+                <label>
+                  <input name="toppings" type="checkbox" > "olives"
+                </label>
+                
+            </p1>
+            <br>
+        <button>submitOrder</button>
 
     </form>
-
-    <p id="result">make a guess!</p> 
 
     <script src="index.js"> </script>
     
