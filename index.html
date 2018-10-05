@@ -10,27 +10,34 @@
 <body>
     <h1> Apps FTW! </h1>
 
-    <button onclick="sayHello();">Click Me!</button>
+    <form onsubmit="return handleSubmit(event), false;">
+
+                <button>Submit</button>
+                
+                    <input name="name" type="text">
+            <p>
+                <label>
+                    comments:
+                        <textarea> I am a comment</textarea>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input checked value="olives" name="toppings" type="checkbox"> Olives
+                </label>
+                <input type="checkbox"> Roni
+                <input type="checkbox"> Pinapple
+            </p>
+            <p>
+                <input checked name="grade" type="radio"> A
+                <input name="grade" type="radio"> B
+                <input name="grade" type="radio"> C
+            </p>
+        </form>
+
+<script src="index.js"></script>
     
-        <input name="name" type="text">
-<p>
-    <label>
-        comments:
-            <textarea></textarea>
-    </label>
-</p>
-
-<p>
-    <input type="checkbox"> Olives
-    <input type="checkbox"> Roni
-    <input type="checkbox"> Pinapple
-</p>
-<p>
-    <input name="grade" type="radio"> A
-    <input name="grade" type="radio"> B
-    <input name="grade" type="radio"> C
-</p>
-
-    <script src="index.js"></script>
+    
 </body>
 </html>

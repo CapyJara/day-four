@@ -1,7 +1,9 @@
-var count = 1;
+function handleSubmit(event) {
+    var form = event.target;
+    var elements = form.elements;
+    var name = elements.name.value;
 
-function sayHello() {
-    console.log('hello world!, for the', count, ' time');
-    count++, name;
+    console.log('name', name);
 }
+
 
