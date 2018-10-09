@@ -9,49 +9,49 @@
 </head>
 <body>
     <h1> ORDER DA ZA!! </h1>
+    
+    <form onsubmit="event.preventDefault(); pizzaOrder(event);">
 
-    <form onsubmit="place.preventDefault(); pizzaOrder(place);">
+        
+        <p>
+            What size pizza do you want?  
+            
+            <label>
+                <input name="zaSize" type="radio" id="small"> small
+            </label>
+            
+            <label>
+                <input name="zaSize" type="radio" id="medium"> medium
+            </label>
 
-            <p1>
-                    What size pizza do you want? 
-                    <br>
-                <label>
-                    <input name="zaSize" type="radio" > "small"
-                </label>
-                <br>
-                <label></label>
-                  <input name="zaSize" type="radio" > "medium"
-                </label>
-                <br>
-                <label>
-                  <input name="zaSize" type="radio" > "large"
-                </label>
-                
-            </p1>
-            <br>
-            <p1>
-                    What toppings do you want? 
-                    <br>
-                <label>
-                  <input name="toppings" type="checkbox" > "roni"
-                </label>
-                <br>
-                <label></label>
-                  <input name="toppings" type="checkbox" > "peppers"
-                </label>
-                <br>
-                <label>
-                  <input name="toppings" type="checkbox" > "olives"
-                </label>
-                
-            </p1>
-            <br>
-        <button>submitOrder</button>
+            <label>
+                <input name="zaSize" type="radio" id="large"> large
+            </label>
+        
+        </p>
+        <p>
+            What toppings do you want?  
+            
+            <label>
+                <input name="zaTopping" type="checkbox" id="roni"> roni
+            </label>
+            
+            <label>
+                <input name="zaTopping" type="checkbox" id="peppers"> peppers
+            </label>
 
+            <label>
+                <input name="zaTopping" type="checkbox" id="olives"> olives
+            </label>
+            
+        </p>
+        
+        
+        <button>SubmitSize</button>
+        
     </form>
-
+    
     <script src="index.js"> </script>
-    
-    
+
 </body>
 </html>

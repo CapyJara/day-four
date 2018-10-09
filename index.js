@@ -1,17 +1,21 @@
-var size = '';
-
-function pizzaOrder(place) {
-    var form = place.target;
+function pizzaOrder(event) {
+    var form = event.target;
     var elements = form.elements;
-    var sizes = elements.sizes;
-   
+    var sizes = elements.zaSize;
+    var toppings = elements.zaTopping;
 
-var selectedSize = '';
-    for (i=0; i < size.length; i++) {
-        var size=sizes[i];
-        if (size.checked) {
-            selectedSize += + ' ' + size.value;
+    for (i=0; i < sizes.length; i++) {
+        if(sizes[i].checked) {
+            console.log('Size ' + sizes[i].id)
+   
+    for (k=0; k < toppings.length; k++) {
+        if(toppings[k].checked == true) {
+            console.log(toppings[k].id)
+          
+            
+           
         }
     }
-
+    }
+}
 }
